@@ -4,7 +4,7 @@ const router = express.Router();
 const noteController = require('../controllers/noteController');
 
 // Define routes
-router.get('/', noteController.getNotes);
+router.get('/get', noteController.getNotes);
 router.post('/', noteController.createNote);
 router.delete('/:id', noteController.deleteNote);
 
